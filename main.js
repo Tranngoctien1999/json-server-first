@@ -40,7 +40,7 @@ server.use((req, res, next) => {
        pagination: {
          _page: Number.parseInt(queryParams._page) || 1,
          _limit: Number.parseInt(queryParams._limit) || 3,
-         _totalRows:Number.parseInt(totalCountHeader)
+         _totalRows:Number.parse(totalCountHeader)
        },
      };
      return res.jsonp(result)
@@ -50,6 +50,6 @@ server.use((req, res, next) => {
  }
 // Use default router
 server.use('/api',router)
-server.listen(3000, () => {
+server.listen(process.evn.PORT || 3000, () => {
   console.log('JSON Server is running')
 })
