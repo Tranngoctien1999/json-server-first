@@ -1,0 +1,37 @@
+# @name getAllProducts
+GET http://localhost:3000/api/products
+
+###
+# @name addNewProduct
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "categoryId":"2",
+    "name": "Dell Inspiron 5567",
+    "saleprice":14000000
+}
+
+###
+# @name editProduct
+PUT  http://localhost:3000/api/products/2
+Content-Type: application/json
+
+{
+    "name": "Máy tính"
+}
+
+###
+# @name deleteProduct
+DELETE   http://localhost:3000/api/products/2
+
+
+###
+#filter
+GET http://localhost:3000/api/products?categoryId=2
+
+###
+
+#sort
+GET http://localhost:3000/api/products?_sort=saleprice&_order=asc

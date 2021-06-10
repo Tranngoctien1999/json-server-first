@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Điện thoại",
+      "createdAt": 1616346753759,
+      "updateAt": 1616346753759
+    },
+    {
+      "name": "Laptop",
+      "createdAt": 1623294099174,
+      "updatedAt": 1623294099174,
+      "id": 2
+    },
+    {
+      "name": "Máy tính",
+      "createdAt": 1623310530966,
+      "updatedAt": 1623310530966,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 13",
+      "createdAt": 1616346753759,
+      "updateAt": 1616346753759,
+      "categoryId": 1,
+      "salePrice": 15000000
+    },
+    {
+      "id": 2,
+      "name": "Iphone 13 Promax",
+      "createdAt": 1616346753759,
+      "updateAt": 1616346753759,
+      "categoryId": 1,
+      "salePrice": 20000000
+    },
+    {
+      "categoryId": "1",
+      "name": "Samsung S7",
+      "saleprice": 15000000,
+      "createdAt": 1623310938645,
+      "updatedAt": 1623310938645,
+      "id": 3
+    },
+    {
+      "categoryId": "2",
+      "name": "Dell Inspiron 5567",
+      "saleprice": 14000000,
+      "createdAt": 1623311172285,
+      "updatedAt": 1623311172285,
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "ngoctien"
+  }
+}
