@@ -50,6 +50,9 @@ server.use((req, res, next) => {
  }
 // Use default router
 server.use('/api',router)
-server.listen(process.evn.PORT || 3000, () => {
+const PORt = process.evn.PORT || 3000;
+
+
+server.listen(PORT, () => {
   console.log('JSON Server is running')
 })
