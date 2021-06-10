@@ -40,7 +40,7 @@ server.use((req, res, next) => {
        pagination: {
          _page: Number.parseInt(queryParams._page) || 1,
          _limit: Number.parseInt(queryParams._limit) || 3,
-         _totalRows:Number.parse(totalCountHeader)
+         _totalRows:Number.parseInt(totalCountHeader)
        },
      };
      return res.jsonp(result)
