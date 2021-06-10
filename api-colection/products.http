@@ -35,3 +35,8 @@ GET http://localhost:3000/api/products?categoryId=2
 
 #sort
 GET http://localhost:3000/api/products?_sort=saleprice&_order=asc
+
+### 
+#pagination
+
+GET http://localhost:3000/api/products?_page=1&_limit=2
