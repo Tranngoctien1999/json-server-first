@@ -50,7 +50,7 @@ server.use((req, res, next) => {
  }
 // Use default router
 server.use('/api',router)
-const PORt = process.evn.PORT || 3000;
+const PORt = process.env.PORT || 3000;
 
 
 server.listen(PORT, () => {
